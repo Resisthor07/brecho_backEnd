@@ -18,5 +18,5 @@ public class Venda {
 
     private boolean confirmacaoDaVenda;
 
-    private boolean confirmcacaoDaEntrega;  
+    private boolean confirmcacaoDaEntrega;
 }

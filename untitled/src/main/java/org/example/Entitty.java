@@ -9,13 +9,42 @@ public class Entitty {
     protected LocalDateTime edicao;
     protected boolean ativo;
 
-    public Entitty(Long id, LocalDateTime criacao, LocalDate edicao, boolean ativo){
+    public Entitty(Long id, LocalDateTime criacao, LocalDateTime edicao, boolean ativo){
         this.id = id;
         this.criacao = criacao;
         this.edicao = edicao;
         this.ativo = ativo;
     }
 
-    publi
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public void setCriacao(LocalDateTime criacao){
+        this.criacao=criacao;
+    }
+
+    public  void setEdicao(LocalDateTime edicao){
+        this.edicao=edicao;
+    }
+
+    public void setAtivo(boolean ativo){
+        this.ativo = ativo;
+    }
+    public Long getId(){
+        return id;
+    }
+    public LocalDateTime getCriacao() {
+        return criacao;
+    }
+    public LocalDateTime getEdicao(){
+        return edicao;
+    }
+    public boolean getAtivo(){
+        return ativo;
+    }
+
+
+
+
 
 }

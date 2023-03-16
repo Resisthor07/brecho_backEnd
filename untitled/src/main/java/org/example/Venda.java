@@ -3,14 +3,14 @@ package org.example;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class Venda {
+public class Venda extends Entitty {
 
 
     private BigDecimal total;
 
     private boolean validacaoPagamento;
 
-    //private Pagamento formaPagamento;
+    private Pagamento formaPagamento;
 
     private LocalDateTime dataDaEntrega;
 
@@ -20,10 +20,13 @@ public class Venda {
 
     private boolean confirmcacaoDaEntrega;
 
-    public Venda(BigDecimal total, boolean validacaoPagamento, LocalDateTime dataDaEntrega,
+    public Venda(Long id, LocalDateTime criacao, LocalDateTime edicao, boolean ativo,
+                 BigDecimal total, boolean validacaoPagamento, Pagamento formaPagamento, LocalDateTime dataDaEntrega,
                  LocalDateTime dataDaVenda, boolean confirmacaoDaVenda, boolean confirmcacaoDaEntrega) {
+        super(id, criacao, edicao, ativo);
         this.total = total;
         this.validacaoPagamento = validacaoPagamento;
+        this.formaPagamento = formaPagamento;
         this.dataDaEntrega = dataDaEntrega;
         this.dataDaVenda = dataDaVenda;
         this.confirmacaoDaVenda = confirmacaoDaVenda;

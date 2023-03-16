@@ -20,6 +20,15 @@ public class Venda {
 
     private boolean confirmcacaoDaEntrega;
 
+    public Venda(BigDecimal total, boolean validacaoPagamento, LocalDateTime dataDaEntrega,
+                 LocalDateTime dataDaVenda, boolean confirmacaoDaVenda, boolean confirmcacaoDaEntrega) {
+        this.total = total;
+        this.validacaoPagamento = validacaoPagamento;
+        this.dataDaEntrega = dataDaEntrega;
+        this.dataDaVenda = dataDaVenda;
+        this.confirmacaoDaVenda = confirmacaoDaVenda;
+        this.confirmcacaoDaEntrega = confirmcacaoDaEntrega;
+    }
 
     public BigDecimal getTotal() {
         return total;
